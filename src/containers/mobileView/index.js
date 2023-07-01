@@ -16,7 +16,7 @@ export function MobileView() {
             <h3 align="center" style={{ margin: "50px 15px" }}>
                 Fokus is a web based productivity tool. Currently it is not supported for mobile browsers. Please visit the{" "}
                 <i>
-                    <a href="https://fokus-website.netlify.com">website</a>
+                    <a href="http://fsncy.ca/">website</a>
                 </i>{" "}
                 to know more.
             </h3>
