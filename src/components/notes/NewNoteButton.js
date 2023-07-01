@@ -46,12 +46,12 @@ export function NewNoteButton({ setNoteInPreview , isGridView }) {
         setNoteInPreview(newNote);
     };
     return (
-        <>
+        <React.Fragment>
             <NewNoteButtonContainer isGridView={isGridView} onClick={() => handleNewNoteAction()}>
                 <AddIcon>
                     <AiOutlinePlus />
                 </AddIcon>
             </NewNoteButtonContainer>
-        </>
+        </React.Fragment>
     );
 }

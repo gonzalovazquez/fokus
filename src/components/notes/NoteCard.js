@@ -57,7 +57,7 @@ function previewNote(str, isGridView) {
 
 export function NoteCard({ note, setNoteInPreview, isGridView }) {
     return (
-        <>
+        <React.Fragment>
             <NoteCardContainer isGridView={isGridView} noteColor={note.color} onClick={() => setNoteInPreview(note)}>
                 <NoteCardContent>
                     <p>{previewNote(note.content,isGridView)}</p>
@@ -69,6 +69,6 @@ export function NoteCard({ note, setNoteInPreview, isGridView }) {
                     </p>
                 </NoteCardStatus>
             </NoteCardContainer>
-        </>
+        </React.Fragment>
     );
 }

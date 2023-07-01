@@ -50,8 +50,8 @@ export function TaskFeedback({ task, time, setInputValid }) {
         if (task !== undefined) {
             // if time is there, it should be stripped and validated first before the actual task content
             let temp = task?.trim().split(" ");
-            if (temp !== undefined && !isNaN(parseInt(temp[temp.length - 1]))) {
-                let taskTime = parseInt(temp.pop());
+            if (temp !== undefined && !isNaN(parseInt(temp[temp.length - 1], 10))) {
+                let taskTime = parseInt(temp.pop(), 10);
                 if (taskTime <= 0) {
                     setError("Hmmm. Time for this task seems weird,no?");
                     errorGenerated = true;
@@ -111,12 +111,12 @@ export function TaskFeedback({ task, time, setInputValid }) {
                     {remainingTaskListTime === 0 ? (
                         <p>Create New Task</p>
                     ) : (
-                        <>
+                        <React.Fragment>
                             <FaClock />
                             <p>list time:</p>
                             {rTLTHours !== "0" && <span>{rTLTHours}h</span>}
                             {rTLTMins !== "00" && <span>{rTLTMins}m</span>}
-                        </>
+                        </React.Fragment>
                     )}
                 </RemainingTaskListTimeDiv>
             ) : (
