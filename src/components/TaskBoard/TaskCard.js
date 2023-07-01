@@ -21,7 +21,7 @@ import tickmark from "./../../images/tickmark.svg";
 import TaskLabelSelect from "./../../components/TaskBoard/TaskLabelSelect";
 import { ONE_DAY } from "./../../helpers/constants";
 import { BsExclamationCircleFill } from "react-icons/bs";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 const TaskCardContainer = styled.div`
     display: flex;

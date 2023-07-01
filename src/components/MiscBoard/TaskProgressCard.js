@@ -57,7 +57,7 @@ export function TaskProgressCard() {
     return (
         <ProgressCard>
             {totalTasksCount !== 0 && (
-                <>
+                <React.Fragment>
                     <ProgressCardText>
                         <p>{completedTasksCount}</p>
                         <span>done tasks</span>
@@ -66,7 +66,7 @@ export function TaskProgressCard() {
                         <p>{totalTasksCount}</p>
                         <span>total tasks</span>
                     </ProgressCardText>
-                </>
+                </React.Fragment>
             )}
 
             <TickIconDiv noTasks={totalTasksCount === 0}>

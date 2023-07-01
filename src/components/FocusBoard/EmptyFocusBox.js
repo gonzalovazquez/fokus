@@ -5,7 +5,7 @@ import "react-circular-progressbar/dist/styles.css";
 import { FaPen } from "react-icons/fa";
 import { HiClock } from "react-icons/hi";
 import { CgNotes } from "react-icons/cg";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { useDispatch } from "react-redux";
 import { focusOnTask } from "../../containers/taskBoard/taskBoardSlice";
 

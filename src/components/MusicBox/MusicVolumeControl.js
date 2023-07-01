@@ -19,7 +19,7 @@ export function MusicVolumeControl({isDisabled}) {
     }
 
     return (
-        <>
+        <React.Fragment>
             <Slider
                 axis="x"
                 xstep={5}
@@ -45,6 +45,6 @@ export function MusicVolumeControl({isDisabled}) {
                     },
                 }}
             />
-        </>
+        </React.Fragment>
     );
 }

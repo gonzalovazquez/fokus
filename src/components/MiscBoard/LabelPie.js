@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { PieChart } from "react-minimal-pie-chart";
+import { PieChart, pieChartDefaultProps } from "react-minimal-pie-chart";
 import { useSelector } from "react-redux";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import { EmptyLabelPie } from "./EmptyLabelPie";
 
 export function LabelPie() {
@@ -51,7 +51,7 @@ export function LabelPie() {
                         fontWeight: "bold",
                     }}
                     data={labelData}
-                    radius={PieChart.defaultProps.radius - 6}
+                    radius={pieChartDefaultProps.radius - 6}
                     lineWidth={lineWidth}
                     segmentsStyle={{ transition: "stroke .3s", cursor: "pointer" }}
                     segmentsShift={2}

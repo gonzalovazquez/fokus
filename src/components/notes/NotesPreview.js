@@ -9,7 +9,7 @@ import ReactMarkdown from "react-markdown";
 import { AiFillEye } from "react-icons/ai";
 import { RiFileEditFill } from "react-icons/ri";
 import { debounce } from "./../../helpers";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 const NotesPreviewContainer = styled(motion.div)`
     display: flex;
@@ -160,7 +160,7 @@ export default function NotesPreview({ note, setNoteInPreview }) {
                 }}
             >
                 {note !== null && (
-                    <>
+                    <React.Fragment>
                         <NoteActionMenu>
                             <MenuActionButtonGroup>
                                 <MenuActionButton onClick={() => handleCloseAction()}>
@@ -207,7 +207,7 @@ export default function NotesPreview({ note, setNoteInPreview }) {
                                 </MarkdownWrapper>
                             )}
                         </NoteContentDiv>
-                    </>
+                    </React.Fragment>
                 )}
             </NotesPreviewContainer>
         </AnimatePresence>

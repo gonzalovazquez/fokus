@@ -4,7 +4,7 @@ import { MdDashboard, MdSettings } from "react-icons/md";
 import { IoMdAnalytics } from "react-icons/io";
 import { BiExclude , BiNotepad } from "react-icons/bi";
 import { NavLink } from "react-router-dom";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 import logo from "./../../images/logo.svg";
 import namedLogoLight from "./../../images/namedLogoDark.svg";
 

@@ -20,7 +20,7 @@ import { BsFillPauseFill, BsFillPlayFill } from "react-icons/bs";
 import { FaClipboardCheck } from "react-icons/fa";
 import { formattedTimeStringv2, updatePageTitle } from "./../../helpers";
 import { MIN_TO_MS } from "../../helpers/constants";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 let dingSoundElement = new Audio(dingSound);
 

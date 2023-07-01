@@ -175,7 +175,7 @@ export default function TaskInput() {
 
     // improve logic - both onKeyDown and onChange executing - combining will be better.
     return (
-        <>
+        <React.Fragment>
             <TaskInputContainer>
                 <TaskContentInputDiv>
                     <AiFillPlusCircle onClick={() => taskContentInputRef.focus()} />
@@ -200,6 +200,6 @@ export default function TaskInput() {
                 </TaskTimeInputDiv>
             </TaskInputContainer>
             <TaskFeedback task={generateFeedbackForTask} time={generateFeedbackForTime} setInputValid={setInputValid}/>
-        </>
+        </React.Fragment>
     );
 }

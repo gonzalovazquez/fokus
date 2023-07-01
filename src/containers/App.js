@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { isMobile } from "react-device-detect";
 import { MobileView } from "./mobileView";
 import Settings from "./settings";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "styled-components";
 import { lightTheme, darkTheme, GlobalStyles } from "./../helpers/themeStyles";
 import { useSelector } from "react-redux";
@@ -23,28 +23,19 @@ function App() {
     if (!isMobile)
         return (
             <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
-                <>
+                <React.Fragment>
                     <GlobalStyles />
                     <AppContainer>
                         <Router>
                             <Menu />
-                            <Switch>
-                                <Route path="/notes">
-                                    <Notes />
-                                </Route>
-                                <Route path="/settings">
-                                    <Settings />
-                                </Route>
-                                <Route path="/">
-                                    <>
-                                        <Dashboard />
-                                        <TaskBoard />
-                                    </>
-                                </Route>
-                            </Switch>
+                            <Routes>
+                                <Route index path="/" element={<React.Fragment> <Dashboard /> <TaskBoard /> </React.Fragment>} />
+                                <Route path="/notes" element={<Notes /> } />
+                                <Route path="/settings" element={<Settings /> } />
+                            </Routes>
                         </Router>
                     </AppContainer>
-                </>
+                </React.Fragment>
             </ThemeProvider>
         );
     else {

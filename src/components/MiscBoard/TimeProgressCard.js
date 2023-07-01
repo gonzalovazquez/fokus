@@ -75,7 +75,7 @@ export function TimeProgressCard() {
     return (
         <ProgressCard>
             {totalTaskListTime !== 0 && (
-                <>
+                <React.Fragment>
                     <ProgressCardText>
                         <FormattedTimeDiv>
                             <p>{rTLTHours}</p>
@@ -95,7 +95,7 @@ export function TimeProgressCard() {
                         </FormattedTimeDiv>
                         <span>total time</span>
                     </ProgressCardText>
-                </>
+                </React.Fragment>
             )}
             <ClockIconDiv noTasks={totalTaskListTime === 0}>
                 <SummaryCardClock />

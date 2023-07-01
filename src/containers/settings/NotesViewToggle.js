@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { setGridView } from "./settingsSlice";
 import { FaThList } from "react-icons/fa";
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
-import ReactTooltip from "react-tooltip";
+import { Tooltip as ReactTooltip } from 'react-tooltip';
 
 const NotesViewDiv = styled.div`
     display: flex;
