@@ -2,7 +2,7 @@
 <img src="https://user-images.githubusercontent.com/34238240/109479789-c5fd4d00-7aa0-11eb-868b-2da35de326b8.png" alt="Fokus Logo">
 </p>
 
-<h3 align="center"> Fokus is a web based productivity tool. Give it a try <a href="https://fokusapp.netlify.app"> here. </a> </h3>
+<h3 align="center"> Fokus is a web based productivity tool. Give it a try <a href="http://fsncy.ca/"> here. </a> </h3>
 <p align="center">
   <img  src="https://img.shields.io/badge/name-fokus-yellow" alt="Game Ref" />
   <img  src="https://img.shields.io/badge/category-productivity-orange" alt="Application Category" />
@@ -12,6 +12,8 @@
 
 
 > NOTE: the project is under development and I am making changes to the react state. As the state is being saved to localstorage, updating it might cause some changes to break for you. If you are facing any issues while loading the app, Please clear localstorage and refresh. Please raise an issue and I'll be happy to help. Thanks.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e1053ed1-3256-4fa8-b488-fcf465f66915/deploy-status)](https://app.netlify.com/sites/boisterous-macaron-9acdc6/deploys)
 
 ## screenshots :heart:
 
