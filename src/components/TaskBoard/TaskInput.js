@@ -66,7 +66,7 @@ const TaskTimeInputDiv = styled.div`
 
 const TaskTimeInputField = styled.input`
     height: 100%;
-    width: 30%;
+    width: 40%;
     font-size: 0.9em;
     text-align: center;
     background-color: ${(p) => p.theme.backgroundSecondary};
